@@ -137,7 +137,7 @@ SupervisionBroadcast/
 ├── main.py                 # Application entry point
 ├── gui.py                  # Main GUI implementation
 ├── stream_monitor.py       # Stream monitoring engine
-├── incident_ai.py          # AI incident analysis
+
 ├── content_moderation.py   # Content moderation system
 ├── channels.json           # Channel configuration
 ├── requirements.txt        # Python dependencies
@@ -151,7 +151,7 @@ SupervisionBroadcast/
 - **StreamMonitor**: Handles real-time stream analysis
 - **MainWindow**: PyQt5-based user interface
 - **ContentModeration**: AI-powered content analysis
-- **IncidentAI**: Intelligent incident recommendations
+
 
 ## Building Executable
 
@@ -191,4 +191,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - VLC for video stream handling
 - OpenCV for image processing
 - NudeNet for content moderation
-- Matplotlib for statistical visualization # Broadcast-Supervision
+- Matplotlib for statistical visualization 
+# Broadcast-Supervision
