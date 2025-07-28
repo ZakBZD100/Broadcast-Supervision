@@ -1,0 +1,11 @@
+PyQt5>=5.15.0
+opencv-python>=4.5.0
+python-vlc>=3.0.0
+Pillow>=8.0.0
+ffmpeg-python>=0.2.0
+matplotlib>=3.0.0
+nudenet>=3.0.0
+pytesseract>=0.3.0
+numpy>=1.19.0
+pandas>=1.3.0
+PyQtChart>=5.15.0 
