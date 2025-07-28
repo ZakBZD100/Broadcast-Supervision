@@ -7,7 +7,6 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtGui import QPixmap, QIcon, QFont, QPalette, QColor, QLinearGradient, QBrush, QPainter, QPen, QPaintEvent, QFontDatabase, QPainterPath
 from PyQt5.QtCore import Qt, QSize, QTimer, QPropertyAnimation, QRect, QEasingCurve, QThread, pyqtSignal, QDate
 from PyQt5.QtMultimedia import QSound
-import incident_ai
 from stream_monitor import StreamMonitor
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
@@ -1158,17 +1157,7 @@ class MainWindow(QMainWindow):
                                 if (date_str in timestamp) and (type_str == 'Tous' or type_str in incident_type):
                                     writer.writerow([timestamp, incident_type, message])
 
-    def show_ai_recommendations(self):
-        from PyQt5.QtWidgets import QMessageBox
-        data_dir = os.path.join(os.getcwd(), 'data')
-        db_path = os.path.join(data_dir, self.active_monitor.db_name)
-        recommandations = incident_ai.analyser_incidents(db_path)
-        msg = QMessageBox(self)
-        msg.setWindowTitle(f"AI Diagnostic - Recommendations for {self.active_monitor.channel_name}")
-        msg.setIcon(QMessageBox.Information)
-        msg.setText("\n\n".join(recommandations))
-        msg.setStandardButtons(QMessageBox.Ok)
-        msg.exec_()
+
 
     def closeEvent(self, event):
         try:
