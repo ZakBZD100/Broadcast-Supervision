@@ -134,16 +134,16 @@ Incidents can be exported in multiple formats:
 
 ```
 SupervisionBroadcast/
-├── main.py                 # Application entry point
-├── gui.py                  # Main GUI implementation
-├── stream_monitor.py       # Stream monitoring engine
+├── main.py                 #Application entry point
+├── gui.py                  #Main GUI implementation
+├── stream_monitor.py       #Stream monitoring engine
 
-├── content_moderation.py   # Content moderation system
-├── channels.json           # Channel configuration
-├── requirements.txt        # Python dependencies
-├── data/                   # Incident databases
-├── assets/                 # Application assets
-└── Screenshots/           # Application screenshots
+├── content_moderation.py   #Content moderation system
+├── channels.json           #Channel configuration
+├── requirements.txt        #Python dependencies
+├── data/                   #Incident databases
+├── assets/                 #Application assets
+└── Screenshots/           #Application screenshots
 ```
 
 ### Key Components
